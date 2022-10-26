@@ -1,0 +1,31 @@
+.App {
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+}
+
+header a{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 200ms ease;
+}
+
+.pairing {
+    display: flex;
+    padding: 20px;
+}
+
+.pairing--drinkCard {
+    flex-basis: 30%;
+    padding: 15px;
+}
+
+.pairing--mealCard {
+    flex-basis: 70%;
+    padding: 15px;
+}
