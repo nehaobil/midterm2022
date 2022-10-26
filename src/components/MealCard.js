@@ -1,13 +1,13 @@
 import React from "react";
 
-function MealCard({mMeal, mInstructions, mImageSource, mIngredient0, mIngredient1, mIngredient2, mIngredient3, mIngredient4, mIngredient5, mIngredient6, mIngredient7, mIngredient8, mIngredient9, mIngredient10, mIngredient11, mIngredient12, mIngredient13, mIngredient14}) {
+function MealCard({meal, instructions, imagesource, ingredient0, ingredient1, ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, ingredient9, ingredient10, ingredient11, ingredient12, ingredient13, ingredient14}) {
     return(
     <div className="MealCard">
-        <h2>{mMeal}</h2>
+        <h2>{meal}</h2>
         <div className="MealCard--ingredients">
-            <p>{mIngredient0}, {mIngredient1}, {mIngredient2}, {mIngredient3}, {mIngredient4}, {mIngredient5}, {mIngredient6}, {mIngredient7}, {mIngredient8}, {mIngredient9}, {mIngredient10}, {mIngredient11}, {mIngredient12}, {mIngredient13}, {mIngredient14}</p>
+        <p>{imagesource}, {ingredient0}, {ingredient1}, {ingredient2}, {ingredient3}, {ingredient4}, {ingredient5}, {ingredient6}, {ingredient7}, {ingredient8}, {ingredient9}, {ingredient10}, {ingredient11}, {ingredient12}, {ingredient13}, {ingredient14}</p>
         </div>
-        <h3>{mInstructions}</h3>
+        <h3>{instructions}</h3>
     </div>
     )
     //use <strong> </strong> to make something bold
