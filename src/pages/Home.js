@@ -14,6 +14,8 @@ function Home() {
     const pairings = {"a": ["11003", "52796"], "b": ["17207", "53065"], "c": ["13020", "52854"], "d": ["12658", "53013"]}; // drink, meal
 
     useEffect(() => {
+        
+        const pairToQuery= searchParams.get("pair") || pair;
         setPair(searchParams.get("pair"));
         axios
         .get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${pairings[pair][0]}`) //${pairings[0][0]}
