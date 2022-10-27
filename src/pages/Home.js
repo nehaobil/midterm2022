@@ -116,6 +116,7 @@ function Home() {
     return (
     <div>
         <Header/>
+        <h1 className="title">the PERFECT place to find the PERFECT food + drink pairings!</h1>
         <div className = "pairing" >
             <div className="pairing--drinkCard">
                 <DrinkCard drink={dDrink} instructions={dInstructions} imagesource={dImageSource} ingredient0={dIngredient0} ingredient1={dIngredient1} ingredient2={dIngredient2} ingredient3={dIngredient3} ingredient4={dIngredient4} ingredient5={dIngredient5} ingredient6={dIngredient6} ingredient7={dIngredient7} ingredient8={dIngredient8} ingredient9={dIngredient9} ingredient10={dIngredient10} ingredient11={dIngredient11} ingredient12={dIngredient12} ingredient13={dIngredient13} ingredient14={dIngredient14} />

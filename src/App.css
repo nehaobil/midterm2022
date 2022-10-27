@@ -1,31 +1,71 @@
 .App {
+    background-image: url("https://live.staticflickr.com/905/28221798498_98ea4c7623_k.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
     display: flex;
     justify-content: flex-start;
+    margin-left: 20%;
+    padding: 15px;
 }
 
 header a{
-    color: black;
+    color: #EEEEDF;
     font-size: 15px;
     font-weight: 500;
     margin-right: 20px;
-    transition: color 200ms ease;
+    transition: color 200ms ease;   
+}
+
+header a:hover{
+    color:#A51C1C;
+}
+
+.title{
+    color: #EEEEDF;
+    margin-left: 30px;
+    font-size: 35px;
 }
 
 .pairing {
     display: flex;
-    padding: 20px;
+    padding: 30px;
 }
 
 .pairing--drinkCard {
+    background-color: #EEEEDF;
+    border: 2px solid black;
     flex-basis: 30%;
     padding: 15px;
 }
 
 .pairing--mealCard {
-    flex-basis: 70%;
+    background-color: #EEEEDF;
+    border: 2px solid black;
+    flex-basis: 75%;
+    margin-left: 5%;
     padding: 15px;
 }
+
+.drinkName, .mealName {
+    text-transform: lowercase;
+    font-size: 30px;
+}
+
+.DrinkCard--ingredients, .MealCard--ingredients{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.drinkIns{
+    font-size: 15px;
+}
+
+.mealInst{
+    font-size: 15px;
+}
+
