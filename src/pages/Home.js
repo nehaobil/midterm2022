@@ -36,7 +36,7 @@ function Home() {
     const {
         dDrink,
         dInstructions,
-        dImageSource,
+        dAlcohol,
         dIngredient0,
         dIngredient1,
         dIngredient2,
@@ -55,6 +55,7 @@ function Home() {
     } = useMemo(() => {
         return {
             dDrink: drinkData.strDrink,
+            dAlcohol: drinkData.strAlcoholic,
             dInstructions: drinkData.strInstructions,
             dIngredient1: drinkData.strIngredient1,
             dIngredient2: drinkData.strIngredient2,
@@ -119,7 +120,7 @@ function Home() {
         <h1 className="title">the PERFECT place to find the PERFECT food + drink pairings!</h1>
         <div className = "pairing" >
             <div className="pairing--drinkCard">
-                <DrinkCard drink={dDrink} instructions={dInstructions} imagesource={dImageSource} ingredient0={dIngredient0} ingredient1={dIngredient1} ingredient2={dIngredient2} ingredient3={dIngredient3} ingredient4={dIngredient4} ingredient5={dIngredient5} ingredient6={dIngredient6} ingredient7={dIngredient7} ingredient8={dIngredient8} ingredient9={dIngredient9} ingredient10={dIngredient10} ingredient11={dIngredient11} ingredient12={dIngredient12} ingredient13={dIngredient13} ingredient14={dIngredient14} />
+                <DrinkCard drink={dDrink} instructions={dInstructions} alcohol={dAlcohol} ingredient0={dIngredient0} ingredient1={dIngredient1} ingredient2={dIngredient2} ingredient3={dIngredient3} ingredient4={dIngredient4} ingredient5={dIngredient5} ingredient6={dIngredient6} ingredient7={dIngredient7} ingredient8={dIngredient8} ingredient9={dIngredient9} ingredient10={dIngredient10} ingredient11={dIngredient11} ingredient12={dIngredient12} ingredient13={dIngredient13} ingredient14={dIngredient14} />
             </div>
             <div className="pairing--mealCard">
                 <MealCard meal={mMeal} instructions={mInstructions} imagesource={mImageSource} ingredient0={mIngredient0} ingredient1={mIngredient1} ingredient2={mIngredient2} ingredient3={mIngredient3} ingredient4={mIngredient4} ingredient5={mIngredient5} ingredient6={mIngredient6} ingredient7={mIngredient7} ingredient8={mIngredient8} ingredient9={mIngredient9} ingredient10={mIngredient10} ingredient11={mIngredient11} ingredient12={mIngredient12} ingredient13={mIngredient13} ingredient14={mIngredient14}/> 
